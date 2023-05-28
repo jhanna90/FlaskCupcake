@@ -1,3 +1,5 @@
+"""Models for Cupcake app."""
+
 from flask_sqlalchemy import SQLAlchemy
 
 DEFAULT_IMG = "https://tinyurl.com/demo-cupcake"
@@ -28,5 +30,7 @@ class Cupcake(db.Model):
 
 
 def connect_db(app):
+    """Connect db to app"""
+
     db.app = app
     db.init_app(app)
