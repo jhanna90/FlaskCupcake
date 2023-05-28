@@ -2,7 +2,7 @@
 
 from flask_sqlalchemy import SQLAlchemy
 
-DEFAULT_IMG = "https://tinyurl.com/demo-cupcake"
+DEFAULT_IMG = "https://i.pinimg.com/236x/06/38/7a/06387a1585d864108e1c11aa02732a3b--outline-drawings-cute-drawings.jpg"
 
 db = SQLAlchemy()
 

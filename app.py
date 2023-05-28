@@ -12,6 +12,12 @@ app.config["SECRET_KEY"] = "shhhsecret"
 connect_db(app)
 
 
+@app.route("/")
+def index():
+    """Renders the index page"""
+    return render_template("index.html")
+
+
 @app.route("/api/cupcakes")
 def list_cupcakes():
     """Returns all cupcakes in the system"""
